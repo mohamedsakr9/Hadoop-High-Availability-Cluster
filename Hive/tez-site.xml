@@ -1,0 +1,30 @@
+<configuration>
+  <property>
+    <name>tez.lib.uris</name>
+    <value>hdfs:///apps/tez/tez.tar.gz</value>
+  </property>
+  <property>
+    <name>tez.use.cluster.hadoop-libs</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>tez.am.resource.memory.mb</name>
+    <value>2048</value>
+  </property>
+  <property>
+    <name>tez.task.resource.memory.mb</name>
+    <value>1024</value>
+  </property>
+  <property>
+    <name>tez.am.view-acls</name>
+    <value>*</value>
+  </property>
+  <property>
+    <name>tez.runtime.optimize.local.fetch</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>tez.staging-dir</name>
+    <value>/tmp/tez/staging</value>
+  </property>
+</configuration>
