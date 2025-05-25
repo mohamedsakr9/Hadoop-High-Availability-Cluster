@@ -1,0 +1,42 @@
+<configuration>
+  <property>
+    <name>hbase.cluster.distributed</name>
+    <value>true</value>
+  </property>
+  <property>
+    <name>hbase.rootdir</name>
+    <value>hdfs://sakrcluster/hbase</value>
+  </property>
+  <property>
+    <name>hbase.zookeeper.quorum</name>
+    <value>m1,m2,m3</value>
+  </property>
+  <property>
+    <name>hbase.master.info.port</name>
+    <value>16010</value>
+  </property>
+  <property>
+    <name>hbase.wal.provider</name>
+    <value>filesystem</value>
+  </property>
+  <property>
+    <name>hbase.master.wait.on.regionservers.mintostart</name>
+    <value>1</value>
+  </property>
+  <property>
+    <name>hbase.assignments.client.timeout</name>
+    <value>300000</value>
+  </property>
+  <property>
+    <name>hbase.master.loadbalancer.autoStartUp</name>
+    <value>true</value>
+  </property>
+<property> 
+   <name>hbase.regionserver.hostname</name>
+    <value>$HOSTNAME</value>
+  </property>
+<property>
+  <name>hbase.replication</name>
+  <value>true</value>
+</property>
+</configuration>
